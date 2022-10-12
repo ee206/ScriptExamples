@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "The shell sees command of length ${#0}"
+echo "First command-line argument is: $1"
+echo "Third argument is: $3"
+echo "A line of arguments is: $*"
+echo "Number of arguments is: $#"
+
