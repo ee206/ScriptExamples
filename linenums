@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ $# -eq 0 ] 		#checks that a filename was passed as argument
+    then
+        echo ERROR: usage is: $0 filename
+        exit 1
+fi
+linenum=1 #initialise linenum
+cat $1 | while read line	#when one arg given whole line assigned
+do
+    echo "$linenum: $line"
+    linenum=$[$linenum + 1]
+done
+

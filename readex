@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cat file.dat | while read x y z
+do
+    echo $x $y $z
+done
+
